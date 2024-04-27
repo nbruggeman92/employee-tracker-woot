@@ -11,7 +11,7 @@ VALUES ('The Best', 100000000000, 1),
        ('CNC Programmer', 80000, 2),
        ('Manual Mill Operator', 400000, 3),
        ('Manual Finisher', 80000, 3),
-       ('Prototype Modeling', 80000, 4,),
+       ('Prototype Modeling', 80000, 4),
        ('Other Product Design', 60000, 4);
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
