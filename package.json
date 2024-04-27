@@ -1,0 +1,12 @@
+{
+  "name": "employee-tracker-woot",
+  "version": "1.0.0",
+  "description": "a fun command-line app that tracks employees!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
