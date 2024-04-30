@@ -7,15 +7,15 @@ const pool = new Pool({
     host: "localhost",
     user: "postgres",
     password: "drew123yay",
-    database: "employee_db",
+    database: "employees_db",
     port: 5432,
 });
 
-pool.connect()
+pool.connect();
 
-    function init() {
-        displayMenu().then(handleMenu);
-    }
+function init() {
+    displayMenu().then(handleMenu);
+}
 
     function displayMenu() {
         const questions = [
@@ -86,5 +86,29 @@ pool.connect()
         }
         return false;
     }
+
+    function viewDepartments(){
+        pool.query(`SELECT * FROM department`, (err, result) => {
+            if(err) {
+                console.error(err);
+            } else {
+                console.table(result.rows);
+                init()
+            };
+        });
+    };
+
+    function viewRoles() {
+        pool.query(`SELECT role.title, role.id, department.name, role.salary 
+        FROM department LEFT 
+        JOIN role ON department.id=department_id`, (err, result) => {
+            if(err){
+                console.error(err);
+            } else {
+                console.table(result.rows);
+                init()
+            };
+        });
+    };
 
     
