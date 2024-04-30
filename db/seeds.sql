@@ -1,3 +1,5 @@
+\c employee_db
+
 INSERT INTO department (name)
 VALUES ('Front Desk'),
        ('CNC Machining'),
@@ -14,12 +16,12 @@ VALUES ('The Best', 100000000000, 1),
        ('Prototype Modeling', 80000, 4),
        ('Other Product Design', 60000, 4);
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('Ted', 'Lasso', 1, NULL),
-       ('Rebecca', 'Welton', 1, NULL),
-       ('Roy', 'Kent', 2, 2),
-       ('Keeley', 'Jones', 2, NULL),
-       ('Noidy', 'Forger', 3, 4),
-       ('Clor', 'Yor', 3, NULL),
+       ('Rebecca', 'Welton', 2, 1),
+       ('Roy', 'Kent', 3, 1),
+       ('Keeley', 'Jones', 4, NULL),
+       ('Noidy', 'Forger', 5, 3),
+       ('Clor', 'Yor', 6, NULL),
        ('Geralt', 'Rivia', 4, NULL),
-       ('Ein', 'Ein', 4, NULL);
+       ('Ein', 'Ein', 7, 4);
