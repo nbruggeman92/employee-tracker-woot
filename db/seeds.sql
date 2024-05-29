@@ -1,12 +1,10 @@
-\c employee_db
-
-INSERT INTO department (name)
+INSERT INTO departments (department_name)
 VALUES ('Front Desk'),
        ('CNC Machining'),
        ('Manual Machining'),
        ('Product Engineering');
 
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ('The Best', 100000000000, 1),
        ('Intake/Shipping', 300000, 1),
        ('CNC Lathe Operator', 70000, 2),
@@ -16,7 +14,7 @@ VALUES ('The Best', 100000000000, 1),
        ('Prototype Modeling', 80000, 4),
        ('Other Product Design', 60000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES ('Ted', 'Lasso', 1, NULL),
        ('Rebecca', 'Welton', 2, 1),
        ('Roy', 'Kent', 3, 1),

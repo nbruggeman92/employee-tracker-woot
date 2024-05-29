@@ -2,7 +2,7 @@
   "name": "employee-tracker-woot",
   "version": "1.0.0",
   "description": "a fun command-line app that tracks employees!",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "inquirer": "^8.2.4",
     "pg": "^8.11.5"
   },
